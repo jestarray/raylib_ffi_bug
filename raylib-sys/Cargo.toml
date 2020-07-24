@@ -1,0 +1,23 @@
+[package]
+name = "raylib-sys"
+version = "3.0.0"
+authors = ["DeltaPHC <phclem@protonmail.com>"]
+license = "Zlib"
+description = "Raw FFI bindings for Raylib"
+documentation = "https://docs.rs/raylib-sys"
+repository = "https://github.com/deltaphc/raylib-rs"
+keywords = ["bindings", "raylib", "gamedev", "ffi"]
+categories = ["external-ffi-bindings"]
+edition = "2018"
+
+[build-dependencies]
+tar = "0.4"
+flate2 = "0.2"
+cmake = "0.1.44"
+cc = "1.0.58"
+ureq = "0.11"
+
+[features]
+default = []
+# Build Raylib headless for docs. Up to you to link
+nobuild = []
